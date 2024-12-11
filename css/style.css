@@ -1,0 +1,63 @@
+:root {
+    --main-color: #d92123;
+    --primary-text-color: #fff;
+    --secondary-text-color: #191919;
+    --secondary-color: #868686;
+    --tertiary-color: #eff3f4;
+    --secondary-bg-color: #5c1011;
+
+}
+* {
+
+    font-family: "Lato";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    
+    a {
+    text-decoration: none;
+    }
+    
+    img {
+    width: 100%;
+    }
+    /* id */
+    #header{
+        min-height: 90vh;
+        background-image: url("../images/img/img/main_banner4.png") ;
+        background-size: cover;
+        background-position: center;
+        color: var(--primary-text-color);
+        margin-bottom: 2rem;
+    }
+    #inner-header{
+        /* padrão linha */
+        display: flex;
+        /* alinhamento horizontal, eixo x */
+        justify-content: space-between;
+        /* alinhamento vertical, eixo y */
+        align-items: center;
+    }
+    #brand {
+        background-color: var(--main-color);
+        padding: 1rem;
+    }
+    
+    #navbar{
+        display: flex;
+        gap: 2rem;   /* espaçamento */
+        text-transform: uppercase; /* texto em maiúsculo */
+        margin-right: 2rem;
+
+    }
+    #navbar a{
+        color: var(--primary-text-color);
+        font-weight: bold;
+        padding: 1rem;
+    }
+
+    h1 { 
+        color:violet;
+    }
+    
