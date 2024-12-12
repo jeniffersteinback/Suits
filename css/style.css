@@ -107,10 +107,10 @@
     .dot{
         width: 20px;
         height: 20px;
-        background-color: var(--secondary-bg-color);
+        background-color: var(--secondary-color);
 
     }
 
     .dot.active{
-        background-color: var(--secondary-color);
+        background-color: var(--secondary-bg-color);
     }
