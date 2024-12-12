@@ -61,10 +61,56 @@
         color:violet;
     }
 
+    .banner.active{
+        opacity: 1; /*banner ativo é mostrado*/
+
+    }
+
+    .banner{
+        max-width: 45%; /*máximo de largura*/
+        opacity: 0;
+        padding: 4rem;
+        position: absolute;
+        
+
+    }
+
+    .banner h2{
+        font-size: 4rem;
+        margin-bottom: 1.2rem;
+        position: relative;
+        z-index: 2; /*ordenar camada*/
+    }
+
+    .banner p{
+        font-size: 1.5rem;
+    }
+
     .square{
         display: block;
         width: 150px;
         height: 150px;
         background-color: var(--main-color);
-        
+        position: absolute;
+        left: 20px;
+        top: 40px;
+        z-index: 1;
+    }
+    .dots{
+        display: flex;
+        gap: 2rem; /*distancia entre eles*/
+        position: absolute;
+        bottom: 9rem;
+        left: 3rem;
+    }
+
+    .dot{
+        width: 20px;
+        height: 20px;
+        background-color: var(--secondary-bg-color);
+
+    }
+
+    .dot.active{
+        background-color: var(--secondary-color);
     }
