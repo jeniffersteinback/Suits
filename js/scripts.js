@@ -43,14 +43,19 @@ function showSlides(){
 // function default
 // function () {
 // }
-menuBtn.addEventListener("click", (e) => {
-    menu.classList.add("menu-active")
-})
+// menuBtn.addEventListener("click", (e) => {
+//     menu.classList.add("menu-active")
+// })
 
-closeMenuBtn.addEventListener("click", (e) => {
-    menu.classList.remove("menu-active")
-})
+// closeMenuBtn.addEventListener("click", (e) => {
+//     menu.classList.remove("menu-active")
+// })
 
+[menuBtn, closeMenuBtn].forEach( (btn) => {
+    btn.addEventListener("click", (e)=> {
+        menu.classList.toggle("menu-active")
+    })
+});
 // Fechar o menu 
 about.addEventListener("click", (e) => {
     menu.classList.remove("menu-active")
